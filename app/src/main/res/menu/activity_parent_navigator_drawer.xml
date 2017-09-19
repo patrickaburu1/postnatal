@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/home"
+            android:title="Home " />
+        <item
+            android:id="@+id/nextVisit"
+            android:icon="@drawable/clinic"
+            android:title="Next Visit" />
+        <item
+            android:id="@+id/clinic"
+            android:icon="@drawable/clinic"
+            android:title="Clinic" />
+        <item
+            android:id="@+id/feeding"
+            android:icon="@drawable/feeding"
+            android:title="Nutrition" />
+        <!--<item-->
+            <!--android:id="@+id/developmentCare"-->
+            <!--android:icon="@drawable/development"-->
+            <!--android:title="Care Of Development" />-->
+        <!--<item-->
+            <!--android:id="@+id/emergency"-->
+            <!--android:icon="@android:drawable/ic_menu_call"-->
+            <!--android:title="Return Immediately" />-->
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/forum"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Forum" />
+            <item
+                android:id="@+id/pLogut"
+                android:icon="@drawable/logout"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>

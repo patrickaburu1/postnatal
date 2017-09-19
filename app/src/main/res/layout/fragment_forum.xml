@@ -1,0 +1,45 @@
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context="com.example.user.m_toto.ParentFragment.Forum">
+
+   <android.support.v7.widget.RecyclerView
+       android:id="@+id/recyclerforum"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"/>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+
+      <EditText
+          android:id="@+id/forumMessage"
+          android:layout_width="0dp"
+          android:layout_weight="3"
+          android:background="@color/white"
+          android:minLines="3"
+          android:hint="Enter Message "
+          android:maxLength="255"
+          android:layout_height="wrap_content" />
+
+      <ImageButton
+          android:id="@+id/sendMessageButton"
+          android:src="@android:drawable/ic_menu_send"
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:layout_height="wrap_content"
+          android:text="send"/>
+
+   </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

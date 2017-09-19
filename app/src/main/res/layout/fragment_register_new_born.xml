@@ -1,0 +1,164 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="com.example.user.m_toto.Fragment.RegisterNewBorn">
+
+    <LinearLayout
+        android:id="@+id/motherLinked"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        android:orientation="horizontal"
+        android:background="@color/background">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Mother"
+            android:textSize="15dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/motherchildname"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="mother Id"
+            android:textSize="15dp"
+            android:layout_height="wrap_content" />
+        <TextView
+        android:id="@+id/motherchildphone"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:text="mother Id"
+            android:textSize="15dp"
+        android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/motherchildId"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="mother Id"
+            android:visibility="gone"
+            android:textSize="15dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/childfname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="First Name"
+                android:inputType="textPersonName"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/childlname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Last Name"
+                android:inputType="textPersonName"/>
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/genderlayout"
+        android:layout_below="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Gender / Sex"/>
+<RadioGroup
+    android:layout_width="0dp"
+    android:layout_weight="2"
+    android:layout_height="wrap_content">
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Male"/>
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Female"/>
+</RadioGroup>
+</LinearLayout>
+    <!--DOB-->
+    <LinearLayout
+        android:id="@+id/doblayout"
+        android:layout_below="@+id/genderlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="DOB"/>
+        <!--<ImageView-->
+            <!--android:id="@+id/dobimage"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@android:drawable/ic_menu_today"/>-->
+        <TextView
+            android:id="@+id/dob"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/gestationAtBirth"
+        android:layout_below="@+id/doblayout">
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/childweght"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Birth Weight In (Kgs)"
+                android:inputType="numberDecimal"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/childheight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Birth Height (Cms)"
+                android:inputType="numberDecimal"/>
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/registerNewBornButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gestationAtBirth"
+        android:text="Register New Born"/>
+</RelativeLayout>
+</ScrollView>

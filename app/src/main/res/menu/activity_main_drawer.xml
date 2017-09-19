@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/homeParentNavigator"
+            android:icon="@drawable/home"
+            android:title="Home" />
+        <item
+            android:id="@+id/weight"
+            android:icon="@android:drawable/ic_input_add"
+            android:title="Weight" />
+        <item
+            android:id="@+id/mainImmunization"
+            android:icon="@drawable/immunization"
+            android:title="Immunization" />
+
+        <item
+            android:id="@+id/length"
+            android:icon="@drawable/height"
+            android:title="Length" />
+
+        <!--<item-->
+            <!--android:id="@+id/mainDevelopment"-->
+            <!--android:icon="@drawable/development"-->
+            <!--android:title="Development" />-->
+        <!--<item-->
+            <!--android:id="@+id/mainDeworming"-->
+            <!--android:icon="@drawable/deworming"-->
+            <!--android:title="Deworming" />-->
+        <!--<item-->
+            <!--android:id="@+id/mainVitamin"-->
+            <!--android:icon="@drawable/vitamin"-->
+            <!--android:title="vitamin" />-->
+    </group>
+
+
+
+</menu>

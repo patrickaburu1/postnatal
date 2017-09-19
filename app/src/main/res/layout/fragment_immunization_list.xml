@@ -1,0 +1,144 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="com.example.user.m_toto.Fragment.ImmunizationList">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+
+
+       <!--CHILD DETAILS AND LAST IMMUNIZATION GIVEN AND DATE OF NEXT VISIT-->
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:paddingLeft="10dp"
+           android:paddingRight="10dp"
+           android:background="@color/blue_btn_bg_color">
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Child Name      "
+           />
+       <TextView
+           android:layout_width="0dp"
+           android:layout_weight="1"
+           android:layout_height="wrap_content"
+           android:text="Child Name"
+           android:id="@+id/dueChildNameImmunization"
+          />
+</LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="1dp"
+               android:background="@color/white"
+               ></LinearLayout>
+       <LinearLayout
+           android:layout_marginTop="10dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+           <TextView
+               android:layout_width="0dp"
+               android:layout_weight="1"
+               android:layout_height="wrap_content"
+               android:text="Age      "
+             />
+           <TextView
+               android:layout_width="0dp"
+               android:id="@+id/dueChildAgeImmunization"
+               android:layout_weight="1"
+               android:layout_height="wrap_content"
+               android:text="00 in wks"
+               />
+       </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="1dp"
+               android:background="@color/white"
+               ></LinearLayout>
+
+           <LinearLayout
+               android:layout_marginTop="10dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_weight="1"
+                   android:layout_height="wrap_content"
+                   android:text="Last Immunization Given" />
+               <TextView
+                   android:layout_width="0dp"
+                   android:id="@+id/lastImmunizationGiven"
+                   android:layout_weight="1"
+                   android:layout_height="wrap_content"
+                   android:text="N/A"
+                   />
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="1dp"
+               android:background="@color/white"
+               ></LinearLayout>
+
+       <LinearLayout
+           android:layout_marginTop="10dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+           <TextView
+               android:layout_width="0dp"
+               android:layout_weight="1"
+               android:layout_height="wrap_content"
+               android:text="Scheduled Next Visit"
+               />
+           <TextView
+               android:layout_width="0dp"
+               android:id="@+id/dueChildNextVisitImmunization"
+               android:layout_weight="1"
+               android:layout_height="wrap_content"
+               android:text="N/A"
+              />
+       </LinearLayout>
+
+       </LinearLayout>
+
+<!--end of child details-->
+
+       <TextView
+           android:layout_marginTop="10dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textAlignment="center"
+           android:text="IMMUNIZATIONS NOT GIVEN"
+           android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+       <android.support.v7.widget.RecyclerView
+           android:id="@+id/recyclerViewImmunization"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+       </android.support.v7.widget.RecyclerView>
+
+   </LinearLayout>
+    <!--<ProgressBar-->
+        <!--android:id="@+id/progressBarImmunization"-->
+        <!--style="?android:attr/progressBarStyleLarge"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_centerVertical="true" />-->
+
+</RelativeLayout>

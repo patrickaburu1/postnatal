@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context="com.example.user.m_toto.Fragment.ParentList">
+   <TextView
+       android:gravity="center"
+       android:id="@+id/registerNewParent"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:textColor="@color/blue"
+       android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+       android:text="Not Found? / Not Registered?\n click here to register mother of child"
+      />
+    <!--<EditText-->
+        <!--android:layout_marginTop="55dp"-->
+        <!--android:layout_above="@id/registerNewParent"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/searchParentNew"/>-->
+<!--<android.support.v7.widget.SearchView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+   <!--<EditText-->
+       <!--android:layout_marginBottom="15dp"-->
+       <!--android:layout_width="match_parent"-->
+       <!--android:layout_height="wrap_content"-->
+       <!--android:id="@+id/searchParentNew"/>-->
+<!--</android.support.v7.widget.SearchView>-->
+    <LinearLayout
+        android:id="@+id/linearOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_weight="3"
+        android:background="@color/background"
+        android:layout_marginTop="50dp">
+
+
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="F NAME"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="L NAME"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="PHONE"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/linearOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerViewParent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:forceHasOverlappingRendering="false">
+
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+
+    <!--<ProgressBar-->
+        <!--android:id="@+id/progressBarParent"-->
+        <!--style="?android:attr/progressBarStyleLarge"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_centerVertical="true" />-->
+
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">M-toto</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_parent_navigator">ParentNavigator</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_nurse_navigator">NurseNavigator</string>
+    <!--set feeding content-->
+    <string name="atbirth"> &#8227; Start breastfeeding soon after birth (within 1/2 hour). \n &#8227;
+ Breastfeed as often as the baby wants day and night, at least 8 times 24 hours. \n &#8227;
+Express breast milk and leave for the baby when away for 6 hours or more. \n &#8227;
+Breastfeed exclusively. Do not give other foods or fluids (not even water). \n &#8227;
+If milk is not enough seek advice from a health worker. \n &#8227;
+If exclusive breastfeeding is not possible due to the mother status or the mother is not
+available (eg. is not alive), seek advice from health worker. </string>
+
+    <!--above 6 months to 1 yeasr-->
+    <string name="above6months">&#8227; Breastfeed as often as the baby wants. \n&#8227;
+    Start introducing enriched complementary foods. \n
+        Food should be sot for ease of chewing and swallowing \n&#8227;
+        Give adequate servings of: \n
+            Thick uji made from any type of cereals (Maize, sorghum, millet) enriched with sugar milk,
+             groundnuts, margarine, fats or oils. \n
+        <b>NB:DO NOT MIX MORE THAN TWO CEREALS </b>\n&#8227;
+        Also mashed foods(banana, potatoes, cassava, rice, ugali) enriched with meat or fish, vegetables,
+          beans, groundnuts, peas, egg. \n
+       <b> NB: Introduce One type of food at a time. </b>\n&#8227;
+        Give milk and any type of fruit. \n&#8227;
+        Add one spoonful of extra oil/fat to child food. \n &#8227;
+        Give 3 times per day if breastfed; and 5 times per day if not breastfed.
+    </string>
+
+    <!--above 12 months to 2 years-->
+    <string name="above1year">&#8227; Breastfeed as often as the child wants. \n&#8227;
+    Give adequate serving of enriched fods 5 times a day. \n &#8227;
+    Thick enriched uji and family foods as described for infants 6 months upto 12 months. \n &#8227;
+    Also give family foods \n &#8227;
+    Add small bits of all types of meat, vegetables, oils of fat, groundnuts, beans, greens grams, peas, eggs. \n &#8227;
+    Give milk and any type of fruit. \n &#8227;
+    Add spoonful of extra oil/fat to child food. \n &#8227;
+    Give 5 times a day.</string>
+
+    <!--above 2 years-->
+    <string name="above2years">&#8227; Give enriched family foods 3 times per day. \n &#8227;
+    Give also at least 2 snacks in between \n
+    e.g thick enriched Uji, ripe bananas, Avocado, cooked sweet potatoes, arrow roots or other nutritious snacks. \n &#8227;
+    Give at least 2 teacups of milk per day.</string>
+
+
+    <string-array name="counties">
+        <item>Select County</item>
+        <item>Nyeri</item>
+        <item>Muranga</item>
+        <item>Laikipia</item>
+        <item>Nyandarua</item>
+        <item>Nakuru</item>
+        <item>Kirinyaga</item>
+    </string-array>
+
+</resources>
